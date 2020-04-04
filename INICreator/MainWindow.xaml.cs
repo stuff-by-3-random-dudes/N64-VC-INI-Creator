@@ -102,6 +102,7 @@ namespace INICreator
             sw.Close();
             string argument = "/select, \"" + path + "\"";
             System.Diagnostics.Process.Start("explorer.exe", argument);
+            //Open Explorer where file is located
         }
     }
 }
