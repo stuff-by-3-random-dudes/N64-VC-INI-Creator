@@ -1,0 +1,39 @@
+﻿<Window x:Class="INICreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:INICreator"
+        mc:Ignorable="d"
+        Title="[WIP] INI Creator" Height="294.278" Width="488.556">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="288" Name="tbGN"/>
+        <ComboBox HorizontalAlignment="Left" Margin="316,25,0,0" VerticalAlignment="Top" Width="120" Name="cbRegion"/>
+        <Label Content="GameName" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="Region" HorizontalAlignment="Left" Margin="316,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rumble:" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Enable Rumble" HorizontalAlignment="Left" Margin="154,58,0,0" VerticalAlignment="Top" GroupName="rb" Name="rbEnRumble" Click="rbEnRumble_Click"/>
+        <RadioButton Content="Disable Rumble" HorizontalAlignment="Left" Margin="323,58,0,0" VerticalAlignment="Top" GroupName="rb" Name="rbDisRumble" Click="rbDisRumble_Click" IsChecked="True"/>
+        <Label Content="UseTimer:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Enable UseTimer" HorizontalAlignment="Left" Margin="154,78,0,0" VerticalAlignment="Top" GroupName="ut" Name="rbEnTimer"/>
+        <RadioButton Content="Disable UseTimer" HorizontalAlignment="Left" Margin="323,78,0,0" VerticalAlignment="Top" GroupName="ut" IsChecked="True"/>
+        <Label Content="BackupType:" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="159,98,0,0" VerticalAlignment="Top" Width="275" Name="cbType"/>
+        <Label Content="BackupSize:" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="159,125,0,0" VerticalAlignment="Top" Width="275" Name="cbSize"/>
+        <Label Content="VSync:" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Enable VSync" HorizontalAlignment="Left" Margin="154,152,0,0" VerticalAlignment="Top" GroupName="vs" Name="rbEnVSync"/>
+        <RadioButton Content="Disable VSync" HorizontalAlignment="Left" Margin="323,152,0,0" VerticalAlignment="Top" GroupName="vs" IsChecked="True"/>
+        <Label Content="Expansion Pack:" HorizontalAlignment="Left" Margin="11,172,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Enable ExpansionPack" HorizontalAlignment="Left" Margin="155,178,0,0" VerticalAlignment="Top" GroupName="ep" Name="rbEnExpansion"/>
+        <RadioButton Content="Disable ExpansionPack" HorizontalAlignment="Left" Margin="324,178,0,0" VerticalAlignment="Top" GroupName="ep" IsChecked="True"/>
+        <Label Content="TrueBoot:" HorizontalAlignment="Left" Margin="11,190,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Enable Trueboot" HorizontalAlignment="Left" Margin="155,196,0,0" VerticalAlignment="Top" GroupName="tb" Name="rbEnTBoot"/>
+        <RadioButton Content="Disable Trueboot" HorizontalAlignment="Left" Margin="324,196,0,0" VerticalAlignment="Top" GroupName="tb" IsChecked="True"/>
+        <Label Content="MemPack:" HorizontalAlignment="Left" Margin="11,208,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Enable MemPack" HorizontalAlignment="Left" Margin="155,214,0,0" VerticalAlignment="Top" GroupName="mp" Name="rbEnMemPack" Click="rbEnMemPack_Click"/>
+        <RadioButton Content="Disable MemPack" HorizontalAlignment="Left" Margin="324,214,0,0" VerticalAlignment="Top" GroupName="mp" Name="rbDisMemPack" Click="rbDisMemPack_Click" IsChecked="True"/>
+        <Button Content="Generate INI" HorizontalAlignment="Left" Margin="359,234,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
+
+    </Grid>
+</Window>
